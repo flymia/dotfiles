@@ -33,4 +33,5 @@ export PATH="$PATH:$HOME/bin"
 export MANPAGER="less -R --use-color -Dd+r -Du+b" # colored man pages
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export PS1="[%{$(tput setaf 39)%}%n%{$(tput setaf 45)%}@%{$(tput setaf 51)%}%m%{$(tput setaf 15)%}] %{$(tput setaf 195)%}%1~ %{$(tput sgr0)%}%# "
+export PROMPT="%B%F{red}[%F{yellow}%n%F{green}@%F{blue}%m %F{magenta}%~%F{red}]%F{white}%% %b%f"
+
