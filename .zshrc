@@ -31,7 +31,7 @@ bindkey  "^[[3~"  delete-char
 
 export PATH="$PATH:$HOME/bin"
 export MANPAGER="less -R --use-color -Dd+r -Du+b" # colored man pages
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ $(uname -a | grep Darwin) ]] || source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PROMPT="%B%F{red}[%F{yellow}%n%F{green}@%F{blue}%m %F{magenta}%~%F{red}]%F{white}%% %b%f"
 
